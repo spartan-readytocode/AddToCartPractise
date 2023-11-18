@@ -5,13 +5,13 @@ import Product from "./Product";
 const Shop = () => {
   return (
     <div>
-      <div className="Shoptitle">
-        <h1 className="text-center">TheDiscountshop</h1>
+      <div className="ShopTitle">
+        <h1 className="text-center">TheDiscountShop</h1>
       </div>
-      <div className="products flex flex-wrap ">
-        {Products.map((product) => (
+      <div className="products flex flex-wrap">
+        {Products.map((product, index) => (
           <Product
-            key={product.id}
+            key={index}
             productName={product.productName}
             price={product.price}
             productImage={product.productImage}
